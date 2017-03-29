@@ -14,7 +14,7 @@ public class FizzBuzz {
     public String getFizzBuzz(int n) {
         String result=String.valueOf(n);;        
         if (n%3==0) result="Fizz";
-        if (n%5==0) result="Buzz";
+        if (n%5==0 || result.contains("5")) result="Buzz";
         return result;
     }     
 }

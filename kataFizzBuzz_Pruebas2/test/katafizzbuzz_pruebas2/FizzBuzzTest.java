@@ -67,4 +67,13 @@ public class FizzBuzzTest {
         assertEquals(expected, result);
     }
     
+    
+    @Test
+    public void testGetFizzBuzzIncludeFiveturnsBuzz() {
+        FizzBuzz fb= new FizzBuzz();
+        String result=fb.getFizzBuzz(50);
+        String expected="Buzz";
+        assertEquals(expected, result);
+    }
+    
 }

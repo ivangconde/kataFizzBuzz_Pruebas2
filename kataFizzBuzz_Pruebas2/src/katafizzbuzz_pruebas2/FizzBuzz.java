@@ -15,6 +15,7 @@ public class FizzBuzz {
 
         String result=String.valueOf(n);
 
+        //Esto hay que refactorizar.... :)
         if (result.indexOf("5")!=result.lastIndexOf("5"))result="BuzzBuzz";
         else{
             if (result.indexOf("3")!=result.lastIndexOf("3")) result="FizzFizz";

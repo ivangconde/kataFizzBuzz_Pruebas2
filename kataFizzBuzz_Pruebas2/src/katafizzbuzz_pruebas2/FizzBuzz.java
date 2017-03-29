@@ -14,9 +14,12 @@ public class FizzBuzz {
     public String getFizzBuzz(int n) {
 
         String result=String.valueOf(n);
-        if (result.contains("3") && result.contains("5")) result="FizzBuzz";
-        if (n%3==0 || result.contains("3")) result="Fizz";
-        if (n%5==0 || result.contains("5")) result="Buzz";
+        if (result.indexOf("5")!=result.lastIndexOf("5"))result="BuzzBuzz";
+        else {
+            if (result.contains("3") && result.contains("5")) result="FizzBuzz";
+            if (n%3==0 || result.contains("3")) result="Fizz";
+            if (n%5==0 || result.contains("5")) result="Buzz";
+        }
         return result;
     }     
 }

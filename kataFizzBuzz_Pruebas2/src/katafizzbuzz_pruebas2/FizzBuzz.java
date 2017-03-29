@@ -15,6 +15,7 @@ public class FizzBuzz {
         String result=String.valueOf(n);;        
         if (n%3==0) result="Fizz";
         if (n%5==0) result="Buzz";
+        if (result.contains("3") && result.contains("5")) result="FizzBuzz";
         return result;
     }     
 }

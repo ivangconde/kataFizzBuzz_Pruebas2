@@ -93,5 +93,13 @@ public class FizzBuzzTest {
         assertEquals(expected, result);
     }
     
+    @Test
+    public void testGetIncludeMultiplesFizz() {
+        FizzBuzz fb= new FizzBuzz();
+        String result=fb.getFizzBuzz(313);
+        String expected="FizzFizz";
+        assertEquals(expected, result);
+    }
+    
 
 }

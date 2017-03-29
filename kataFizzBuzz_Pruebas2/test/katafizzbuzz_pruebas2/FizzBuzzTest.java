@@ -59,4 +59,12 @@ public class FizzBuzzTest {
     }
     
     
+    @Test
+    public void testGetFizzBuzzFiveMultiplesReturnsBuzz() {
+        FizzBuzz fb= new FizzBuzz();
+        String result=fb.getFizzBuzz(10);
+        String expected="Buzz";
+        assertEquals(expected, result);
+    }
+    
 }
